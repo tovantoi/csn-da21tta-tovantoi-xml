@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <student>
+        <id>01</id>
+        <name>Tô Văn Tới</name>
+        <email>tovantoi2003@gmail.com</email>
+        <major>CNTT</major>
+    </student>
+    <student>
+        <id>02</id>
+        <name>Trần Bá Hiếu</name>
+        <email>hieungu@gmail.com</email>
+        <major>CNTT</major>
+    </student>
+</students>
