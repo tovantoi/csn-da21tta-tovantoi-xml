@@ -77,15 +77,12 @@
     </style>
 
     <?php
-    // Function to load students from XML file
     function loadStudents()
     {
         $xml = new DOMDocument();
         $xml->load('timhieu.xml');
         return $xml;
     }
-
-    // Function to save students to XML file
     function saveStudents($xml)
     {
         $xml->save('timhieu.xml');
