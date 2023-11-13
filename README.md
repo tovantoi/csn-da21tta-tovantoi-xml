@@ -35,3 +35,5 @@ Phần tử scores chứa điểm số của sinh viên trong các môn học c�
 
 - Ở trong file index là code mẫu em tìm hiểu được thông qua tìm kiếm các trang tài liệu qua đó em sẽ dựa trên bài code mẫu đó mà tìm hiểu thêm , hiểu được ý nghĩa các dòng code mà tiến hành sửa lại theo đúng đề tài mà em đã chọn.
 
+  Hôm nay ngày 13/11/2023 em đã gần hoàn thành 3 chương của bài báo cáo 
+
