@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classes>
+    <class>
+        <class_id>01</class_id>
+        <name>Công Nghệ Thông Tin A</name>
+    </class>
+    <class>
+        <class_id>02</class_id>
+        <name>Công Nghệ Thông Tin B</name>
+    </class>
+    <class>
+        <class_id>03</class_id>
+        <name>Công Nghệ Thông Tin C</name>
+    </class>
+   <class>
+        <class_id>04</class_id>
+        <name>Công Nghệ Thông Tin D</name>
+   </class>
+    <class>
+        <class_id>05</class_id>
+        <name>Công Nghệ Thông Tin E</name>
+    </class>
+</classes>

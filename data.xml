@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <students>
-    <student>
-        <id>01</id>
-        <name>Tô Văn Tới</name>
+    <student mssv="121123132">
+        <full_name>You Hey</full_name>
+        <class_code>02</class_code>
+        <address>dfbdsbfds</address>
+        <phone>0359272229</phone>
         <email>tovantoi2003@gmail.com</email>
         <major>CNTT</major>
+        <gender>nam</gender>
+        <dob>2023-11-30</dob>
+        <avatar>JPEG_20221015_234549_3960523167715025491.jpg</avatar>
+        <ethnicity>71</ethnicity>
+        <religion>tttt</religion>
+        <parents>
+            <father full_name="Phan Minh Thứ" occupation="ưdcqwes" year_of_birth="1980"/>
+            <mother full_name="rgsrh" occupation="rtefgjn" year_of_birth="9999"/>
+        </parents>
     </student>
-    <student>
-        <id>02</id>
-        <name>Trần Bá Hiếu</name>
-        <email>hieungu@gmail.com</email>
-        <major>CNTT</major>
-    </student>
-</students>
+    
+<student mssv="1111111"><full_name>Tô Văn Tới</full_name><class_code>02</class_code><address>dcqwsdfvev</address><phone>+84359272229</phone><email>tovantoi2003@gmail.com</email><major>CNTT</major><gender>nam</gender><dob>2024-01-07</dob><avatar>JPEG_20221015_234459_5569362809052744475.jpg</avatar><ethnicity>Cần Thơ</ethnicity><religion>ádvasdv</religion><parents><father full_name="dức ưesdc" occupation="ưdcqwes" year_of_birth="rtjhrwe"/><mother full_name="dức ưesdc" occupation="rtefgjn" year_of_birth="2132"/></parents></student><student mssv="1111111"><full_name>Tô Văn Tới</full_name><class_code>05</class_code><address>dcqwsdfvev</address><phone>+84359272229</phone><email>tovantoi2003@gmail.com</email><major>CNTT</major><gender>nam</gender><dob>2023-12-02</dob><avatar>JPEG_20221015_234430_2589821495452025565.jpg</avatar><ethnicity>Cần Thơ</ethnicity><religion>ádvasdv</religion><parents><father full_name="dức ưesdc" occupation="ưdcqwes" year_of_birth="rtjhrwe"/><mother full_name="dức ưesdc" occupation="rtefgjn" year_of_birth="2132"/></parents></student></students>
