@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+  <user id="01">
+    <mssv>110121252</mssv>
+    <fullname>Tô Văn Tới</fullname>
+    <username>tovantoi</username>
+    <password>12345</password>
+    <phone>0359272229</phone>
+    <email>tovantoi2003@gmail.com</email>
+    <role>1</role>
+  </user>
+  <user>
+    <fullname>Tô Văn Tới</fullname>
+    <username>tovantoi</username>
+    <password>54321</password>
+    <role>2</role>
+  </user>
+</users>
