@@ -7,7 +7,7 @@ require_once("header.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Student CV</title>
-    <!-- <style>
+    <style>
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f8f9fa;
@@ -51,8 +51,6 @@ require_once("header.php");
             color: #007bff;
         }
 
-        /* Thêm đoạn CSS này vào phần style của bạn */
-
         button {
             display: block;
             margin: 20px auto;
@@ -77,7 +75,7 @@ require_once("header.php");
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             transform: translateY(2px);
         }
-    </style> -->
+    </style>
 </head>
 
 
@@ -87,13 +85,12 @@ require_once("header.php");
         <div class="card">
             <div class="card-body">
                 <?php
-                $file = 'data.xml';
+                if (isset($_GET['mssv'])) {
+                    $selectedMSSV = $_GET['mssv'];
+                    $file = 'sinhvien.xml';
 
-                if (file_exists($file)) {
-                    $xml = simplexml_load_file($file);
-
-                    if (isset($_GET['mssv'])) {
-                        $selectedMSSV = $_GET['mssv'];
+                    if (file_exists($file)) {
+                        $xml = simplexml_load_file($file);
                         $selectedStudent = $xml->xpath("//student[@mssv='$selectedMSSV']");
 
                         if (!empty($selectedStudent)) {
@@ -107,7 +104,7 @@ require_once("header.php");
                             </center>
                             <div class="row">
                                 <div class="col-md-4">
-                                    <img src="img/<?= $selectedStudent->avatar ?>" alt="anh dai dien" class="img-fluid" width='200' height='200'>
+                                    <img src="./img/?= $selectedStudent->avatar ?>" alt="anh dai dien" class="img-fluid" width='200' height='200'>
                                 </div><br>
                                 <div class="col-md-8">
                                     <br>
@@ -133,6 +130,7 @@ require_once("header.php");
                                     <p><strong>Năm sinh mẹ:</strong><?= $selectedStudent->parents->mother['year_of_birth'] ?></p>
                                 </div>
                             </div>
+
                 <?php
                         } else {
                             echo '<p class="text-danger mt-3">Student with MSSV ' . $selectedMSSV . ' not found.</p>';
@@ -142,6 +140,7 @@ require_once("header.php");
                     echo 'XML file not found.';
                 }
                 ?>
+                <a class="btn btn-primary" href="sinhvien.php">Quay lại</a>
             </div>
         </div>
     </div>

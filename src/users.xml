@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+  <user id="03">
+    <mssv>110121567</mssv>
+    <fullname>Cao Duy Nhân</fullname>
+    <username>caoduynhan</username>
+    <password>123</password>
+    <phone>0329330518</phone>
+    <email>tovantoi2003@gmail.com</email>
+    <role>1</role>
+  </user>
+  <user>
+    <mssv/>
+    <fullname>Tô Văn Tới</fullname>
+    <username>tovantoi</username>
+    <password>54321</password>
+    <phone>0359272229</phone>
+    <email>tovantoi2003@gmail.com</email>
+    <role>2</role>
+  </user>
+  <user id="658dc70fbe44c">
+    <mssv>110121246</mssv>
+    <fullname>Ngô Thị Trúc Xuân</fullname>
+    <username>trucxuan</username>
+    <password>123</password>
+    <phone>0359272876</phone>
+    <email>trucxuan@gmail.com</email>
+    <role>1</role>
+  </user>
+  <user id="01">
+    <mssv>110121456</mssv>
+    <fullname>Kim Quang Trọng</fullname>
+    <username>quangtrong</username>
+    <password>123</password>
+    <phone>0359272876</phone>
+    <email>kimquangtrong2003@gmail.com</email>
+    <role>1</role>
+  </user>
+  <user id="02">
+    <mssv>110121252</mssv>
+    <fullname>Tô Văn Tới</fullname>
+    <username>tovantoi</username>
+    <password>123</password>
+    <phone>+84359272229</phone>
+    <email>tovantoi2003@gmail.com</email>
+    <role>1</role>
+  </user>
+<user id="04"><mssv>110121379</mssv><fullname>Trần Bá Hiếu</fullname><username>tranbahieu</username><password>123</password><phone>02454672523</phone><email>hieuba@gmail.com</email><role>1</role></user></users>

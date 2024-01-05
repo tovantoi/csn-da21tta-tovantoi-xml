@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+  <student mssv="110121567">
+    <full_name>Cao Duy Nhân</full_name>
+    <class_code>Công nghệ thông tin A</class_code>
+    <address> trà vinh</address>
+    <phone>0359272222</phone>
+    <email>caoduynhan2003@gmail.com</email>
+    <major>Công nghệ thông tin</major>
+    <gender>nam</gender>
+    <dob>2003-07-16</dob>
+    <avatar/>
+    <ethnicity>Kinh</ethnicity>
+    <religion>phật giáo</religion>
+    <parents>
+      <father full_name="Tô Văn Tới" occupation="Kỹ sư phần mềm" year_of_birth="1798"/>
+      <mother full_name="Kim Quang Trọng" occupation="Nội Trợ" year_of_birth="1999"/>
+    </parents>
+  </student>
+  <student mssv="110121246">
+    <full_name>Ngô Thị Trúc Xuân</full_name>
+    <class_code>Công nghệ thông tin A</class_code>
+    <address>duyên hải - trà vinh</address>
+    <phone>0359272229</phone>
+    <email>trucxuan@gmail.com</email>
+    <major>Công nghệ thông tin</major>
+    <gender>nu</gender>
+    <dob>2023-12-15</dob>
+    <avatar/>
+    <ethnicity>Kinh</ethnicity>
+    <religion>phật giáo</religion>
+    <parents>
+      <father full_name="Phan Minh Thứ" occupation="Kỹ sư phần mềm" year_of_birth="1798"/>
+      <mother full_name="Kim Hoàng Nam" occupation="Nội Trợ" year_of_birth="1999"/>
+    </parents>
+  </student>
+  <student mssv="110121253">
+    <full_name>Kim Hoàng Nam</full_name>
+    <class_code>Công nghệ thông tin C</class_code>
+    <address>trà cú - trà vinh</address>
+    <phone>0359272288</phone>
+    <email>kimhoangnam2003@gmail.com</email>
+    <major>Công nghệ thông tin</major>
+    <gender>nam</gender>
+    <dob>2003-06-05</dob>
+    <avatar>images (3).jpg</avatar>
+    <ethnicity>nu</ethnicity>
+    <religion>phật giáo</religion>
+    <parents>
+      <father full_name="Tô Văn Tới" occupation="Kỹ sư phần mềm" year_of_birth="1798"/>
+      <mother full_name="Ngô Thị Trúc Xuân" occupation="Nội Trợ" year_of_birth="1999"/>
+    </parents>
+  </student>
+  <student mssv="110121345">
+    <full_name>Kim Quang Trọng</full_name>
+    <class_code>Nuôi trồng thuy sản A</class_code>
+    <address>trà cú - trà vinh</address>
+    <phone>0123487652</phone>
+    <email>quangtrong1232gmail.</email>
+    <major>Nuôi trồng thuỷ sản</major>
+    <gender>nam</gender>
+    <dob>2023-12-08</dob>
+    <avatar/>
+    <ethnicity>Kinh</ethnicity>
+    <religion>phật giáo</religion>
+    <parents>
+      <father full_name="Kim Quang Vui" occupation="làm nông" year_of_birth="2345"/>
+      <mother full_name="Cao Duy Nhân" occupation="Nội Trợ" year_of_birth="1999"/>
+    </parents>
+  </student>
+  <student mssv="110121379">
+    <full_name>Trần Bá Hiếu</full_name>
+    <class_code>Công nghệ thông tin C</class_code>
+    <address>long đức - trà vinh</address>
+    <phone>02454672523</phone>
+    <email>hieuba@gmail.com</email>
+    <major>Công nghệ thông tin</major>
+    <gender>nam</gender>
+    <dob>2023-12-12</dob>
+    <avatar>images (3).jpg</avatar>
+    <ethnicity>nam</ethnicity>
+    <religion>phật giáo</religion>
+    <parents>
+      <father full_name="Tô Văn Tới" occupation="Kỹ sư phần mềm" year_of_birth="1798"/>
+      <mother full_name="Phan Minh Thứ" occupation="Nội Trợ" year_of_birth="1111"/>
+    </parents>
+  </student>
+  <student mssv="110121543">
+    <full_name>Trần Nhựt Hào</full_name>
+    <class_code>Nuôi trồng thuy sản B</class_code>
+    <address>trà vinh</address>
+    <phone>0359272229</phone>
+    <email>tovantoi2003@gmail.com</email>
+    <major>Nuôi trồng thuỷ sản</major>
+    <gender>nam</gender>
+    <dob>2023-12-10</dob>
+    <avatar>images.jpg</avatar>
+    <ethnicity>nam</ethnicity>
+    <religion>phật giáo</religion>
+    <parents>
+      <father full_name="Tô Văn Tới" occupation="Kỹ sư phần mềm" year_of_birth="1798"/>
+      <mother full_name="Phan Minh Thứ" occupation="Nội Trợ" year_of_birth="1111"/>
+    </parents>
+  </student>
+  <student mssv="110121964">
+    <full_name>Nguyễn Thị Mỹ Tuyền</full_name>
+    <class_code>Nuôi trồng thuy sản A</class_code>
+    <address>duyên hải - trà vinh</address>
+    <phone>0359272229</phone>
+    <email>tovantoi2003@gmail.com</email>
+    <major>Nuôi trồng thuỷ sản</major>
+    <gender>nu</gender>
+    <dob>2023-12-09</dob>
+    <avatar>t2.jpg</avatar>
+    <ethnicity>nam</ethnicity>
+    <religion>phật giáo</religion>
+    <parents>
+      <father full_name="Tô Văn Tới" occupation="Kỹ sư phần mềm" year_of_birth="1798"/>
+      <mother full_name="Phan Minh Thứ" occupation="Nội Trợ" year_of_birth="1111"/>
+    </parents>
+  </student>
+</students>

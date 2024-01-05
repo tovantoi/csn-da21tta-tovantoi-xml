@@ -26,32 +26,31 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
 		$xml = simplexml_load_file("users.xml") or die("Error: Không thể load file xml");
 
 		$found = false;
-
 		foreach ($xml->user as $user) {
 			$n = strval($user->username);
 			$p = strval($user->password);
 
 			if ($n === $uname && $p === $pass) {
+				$selectedStudentMSSV = strval($user->mssv);
 				$_SESSION["name"] = $n;
 				$_SESSION["role"] = strval($user->role);
-
+				$_SESSION["mssv"] = strval($user->mssv);
 				if ($_SESSION["role"] === "1") {
-					header("Location: nguoidung.php"); // Điều hướng đến trang người dùng nếu là vai trò user
+					header("Location: nguoidung.php");
 				} else if ($_SESSION["role"] === "2") {
-					header("Location: quantri.php"); // Điều hướng đến trang quản trị nếu là vai trò admin
+					header("Location: quantri.php");
 				}
-
 				$found = true;
 				break;
 			}
 		}
 
 		if (!$found) {
-			header("Location: index2.php?error=Incorrect User name or password");
+			header("Location: index.php?error=Incorrect User name or password");
 			exit();
 		}
 	}
 } else {
-	header("Location: index2.php");
+	header("Location: index.php");
 	exit();
 }

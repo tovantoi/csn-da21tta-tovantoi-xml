@@ -2,31 +2,22 @@
 require_once("header.php");
 ?>
 <?php
-// Function to load students from XML file
 function loadStudents()
 {
     $xml = new DOMDocument();
-    $xml = simplexml_load_file('data.xml');
-    // $xml->load('data.xml');
+    $xml = simplexml_load_file('sinhvien.xml');
+    // $xml->load('sinhvien.xml');
 
     return $xml;
 }
 
-// Function to save students to XML file
 function saveStudents($xml)
 {
     $xml->preserveWhiteSpace = false;
     $xml->formatOutput = true;
     $xml->loadXML($xml->asXML());
-    $xml->save('data.xml');
+    $xml->save('sinhvien.xml');
 }
-
-function loadClasses()
-{
-    $xml = simplexml_load_file('malop.xml');
-    return $xml;
-}
-
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['add_student'])) {
         $xml = loadStudents();
@@ -83,20 +74,56 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 ?>
+<style>
+    .dropbtn {
+        background-color: #f1f1f1;
+        color: black;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
 
+    .dropbtn:hover,
+    .dropbtn:focus {
+        background-color: #ddd;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
 <h1>Thêm mới một sinh viên</h1>
-<form method="post" action="Xuly_sinhvien.php">
+<form method="post" action="Xuly_sinhvien.php" enctype="multipart/form-data">
     <div class="form-group">
-        <label for="" class="control-label">Chọn lớp:</label>
-        <select class="form-control" name="class_code" required>
+        <label for="" class="control-label">Ngành học:</label>
+        <select class="form-control" name="major" required>
             <?php
-            $xmlClass = loadClasses();
-
-            foreach ($xmlClass->class as $class) {
-                $class_id = $class->class_id;
-                $class_name = $class->name;
-
-                echo "<option value='$class_id'>$class_name</option>";
+            $xml = simplexml_load_file('nganhhoc.xml');
+            foreach ($xml->children() as $nganhhoc) {
+                echo "<option value='" . htmlspecialchars($nganhhoc) . "'>" . htmlspecialchars($nganhhoc) . "</option>";
+            }
+            ?>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="class_code" class="control-label">Chọn lớp:</label>
+        <select id="class_code" class="form-control" name="class_code" required>
+            <?php
+            $xml = simplexml_load_file('lop.xml');
+            foreach ($xml->class as $lop) {
+                $class_id = $lop->class_id;
+                $class_name = $lop->name;
+                echo "<option value='$class_name'>$class_id</option>";
             }
             ?>
         </select>
@@ -123,10 +150,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <input class="form-control" type="text" name="email" placeholder="Nhập Email" required>
     </div>
     <div class="form-group">
-        <label for="" class="control-label">Ngành học:</label>
-        <input class="form-control" type="text" name="major" placeholder="Nhập ngành học" required>
-    </div>
-    <div class="form-group">
         <label for="" class="control-label">Giới tính:</label>
         <select class="form-control" name="gender" id="cars">
             <option value="nam">Nam</option>
@@ -144,7 +167,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
     <div class="form-group">
         <label for="" class="control-label">Dân tộc:</label>
-        <select class="form-control" name="gender" id="cars">
+        <select class="form-control" name="ethnicity" id="cars">
             <option value="nam">Kinh</option>
             <option value="nu">Khmer</option>
             <option value="khac">Hoa</option>
@@ -183,7 +206,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <input class="form-control" type="text" name="mother_year_of_birth" placeholder="Nhập năm sinh mẹ" required>
     </div>
     <br>
-    <input class="btn btn-primary" type="submit" name="add_student" value="Thêm mới ">
+    <input class="btn btn-primary" type="submit" name="add_student" value="Thêm mới">
+    <a class="btn btn-primary" href="sinhvien.php">Quay lại</a>
 </form>
 <?php
 require_once("footer.php");

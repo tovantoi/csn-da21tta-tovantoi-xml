@@ -1,3 +1,9 @@
+#Tô Văn Tới
+##Email: tovantoi2003@gmail.com
+##SDT: 0359272229
+
+
+
 #Tổng quan về ngôn ngữ XML
 ##khái niệm
 XML (**eXtensible Markup Language**) là một ngôn ngữ đánh dấu dùng để lưu trữ và truyền tải dữ liệu. Được phát triển bởi W3C (**World Wide Web Consortium**), XML cho phép người dùng tự định nghĩa các thẻ tùy ý để tạo ra cấu trúc dữ liệu linh hoạt và dễ dàng để đọc bởi con người và các ứng dụng máy tính.

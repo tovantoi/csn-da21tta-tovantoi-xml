@@ -6,19 +6,19 @@ require_once("header.php");
 function loadStudents()
 {
   $xml = new DOMDocument();
-  $xml->load('data.xml');
+  $xml->load('sinhvien.xml');
   return $xml;
 }
 
 // Function to save students to XML file
 function saveStudents($xml)
 {
-  $xml->save('data.xml');
+  $xml->save('sinhvien.xml');
 }
 
-function loadClasses()
+function loadClasse()
 {
-  $xml = simplexml_load_file('malop.xml');
+  $xml = simplexml_load_file('lop.xml');
   return $xml;
 }
 
@@ -124,13 +124,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ?>
 
 
-<a class="btn btn-primary" href="./themsinhvien.php">Thêm Sinh Viên</a></button>
+<a class="btn btn-primary" href="./themsinhvien.php">Thêm Sinh Viên</a>
 <div class="table-responsive-md">
   <table class="table table-hover">
     <tr>
       <th>MSSV</th>
       <th>Họ và Tên</th>
-      <th>Lớp</th>
+      <th>Lớp - Mã</th>
       <th>Địa chỉ</th>
       <th>Số điện thoại</th>
       <!--<th>Email</th>
