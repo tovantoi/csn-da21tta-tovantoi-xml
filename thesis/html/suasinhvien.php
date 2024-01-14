@@ -123,6 +123,7 @@ if ($selectedStudent) {
     </div>
     <div class="form-group">
         <label for="avatar" class="control-label">Ảnh đại diện:</label>
+        <input type="hidden" name="avatar" value="<?php echo htmlspecialchars($avatar); ?>">
         <img src="img/<?php echo isset($avatar) ? htmlspecialchars($avatar) : ''; ?>" alt="Ảnh đại diện">
     </div>
     <div class="form-group">

@@ -71,6 +71,7 @@ function updateStudent($xmlFilePath, $masv, $tensv, $malop, $diachi, $sdt, $emai
     // Tìm và cập nhật thông tin Sinh viên
     foreach ($xml->student as $student) {
         if ((string)$student['mssv'] === $masv) {
+            $avatar_update = (string)$student->avatar;
             $student->full_name = $tensv;
             $student->class_code = $malop;
             $student->address = $diachi;
@@ -90,6 +91,23 @@ function updateStudent($xmlFilePath, $masv, $tensv, $malop, $diachi, $sdt, $emai
             $student->parents->mother->attributes()->full_name = $hotenme;
             $student->parents->mother->attributes()->occupation = $nghenghiepme;
             $student->parents->mother->attributes()->year_of_birth = $namsinhme;
+
+            if ($_FILES["avatar"]["size"] > 0) {
+                $target_dir = "img/";
+                $target_file = $target_dir . basename($_FILES["avatar"]["name"]);
+
+                // Xóa file cũ
+                if (file_exists($avatar_update)) {
+                    unlink($avatar_update);
+                }
+
+                // Upload file mới
+                move_uploaded_file($_FILES["avatar"]["tmp_name"], $target_file);
+
+                // Cập nhật đường dẫn avatar trong XML
+                $student->avatar = $target_file;
+            }
+
 
             // Lưu thay đổi vào tệp XML
             $xml->asXML($xmlFilePath);

@@ -87,7 +87,7 @@
   </student>
   <student mssv="110121543">
     <full_name>Trần Nhựt Hào</full_name>
-    <class_code>Nuôi trồng thuy sản B</class_code>
+    <class_code>Công nghệ thông tin C</class_code>
     <address>trà vinh</address>
     <phone>0359272229</phone>
     <email>tovantoi2003@gmail.com</email>
@@ -95,11 +95,11 @@
     <gender>nam</gender>
     <dob>2023-12-10</dob>
     <avatar>images.jpg</avatar>
-    <ethnicity>nam</ethnicity>
+    <ethnicity>Kinh</ethnicity>
     <religion>phật giáo</religion>
     <parents>
       <father full_name="Tô Văn Tới" occupation="Kỹ sư phần mềm" year_of_birth="1798"/>
-      <mother full_name="Phan Minh Thứ" occupation="Nội Trợ" year_of_birth="1111"/>
+      <mother full_name="Phan Minh Thứ" occupation="Nội Trợ" year_of_birth="1982"/>
     </parents>
   </student>
   <student mssv="110121964">
@@ -138,7 +138,7 @@
   </student>
   <student mssv="110121789">
     <full_name>Kim Thế Vinh</full_name>
-    <class_code>Sư phạm ngữ văn</class_code>
+    <class_code>Công nghệ thông tin C</class_code>
     <address>Tiểu cần - Trà vinh</address>
     <phone>0347863345</phone>
     <email>thevinh2003@gmail.com</email>
@@ -146,28 +146,12 @@
     <gender>nam</gender>
     <dob>2024-01-12</dob>
     <avatar>tải xuống.jpg</avatar>
-    <ethnicity>nu</ethnicity>
-    <religion>phật giáo</religion>
-    <parents>
-      <father full_name="Cao Duy Nhân" occupation="Kỹ sư phần mềm" year_of_birth="1798"/>
-      <mother full_name="Thanh hoa" occupation="Nội Trợ" year_of_birth="1999"/>
-    </parents>
-  </student>
-  <student mssv="110121254">
-    <full_name>Lý Minh Thuận</full_name>
-    <class_code>Công nghệ thông tin C</class_code>
-    <address>trà cú - trà vinh</address>
-    <phone>0845786966</phone>
-    <email>thuan2002@gmail.com</email>
-    <major>Thú Y</major>
-    <gender>nam</gender>
-    <dob>2024-01-05</dob>
-    <avatar/>
     <ethnicity>Kinh</ethnicity>
     <religion>phật giáo</religion>
     <parents>
-      <father full_name="Tô Văn Tới" occupation="Kỹ sư phần mềm" year_of_birth="1798"/>
-      <mother full_name="Thanh hoa" occupation="Nội Trợ" year_of_birth="2222"/>
+      <father full_name="Cao Duy Nhân" occupation="Kỹ sư phần mềm" year_of_birth="1798"/>
+      <mother full_name="Thanh hoa" occupation="Nội Trợ" year_of_birth="1988"/>
     </parents>
   </student>
+  
 </students>
