@@ -3,24 +3,8 @@ require_once("header.php");
 ?>
 <?php
 // Function to load students from XML file
-function loadStudents()
-{
-  $xml = new DOMDocument();
-  $xml->load('sinhvien.xml');
-  return $xml;
-}
 
-// Function to save students to XML file
-function saveStudents($xml)
-{
-  $xml->save('sinhvien.xml');
-}
-
-function loadClasse()
-{
-  $xml = simplexml_load_file('lop.xml');
-  return $xml;
-}
+include_once('function_list.php');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   if (isset($_POST['add_student'])) {
@@ -133,11 +117,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <th>Lớp - Mã</th>
       <th>Địa chỉ</th>
       <th>Số điện thoại</th>
-      <!--<th>Email</th>
-      <th>Ngành học</th>-->
       <th>Giới tính</th>
       <th>Ngày sinh</th>
-      <!--<th>Ảnh đại diện</th>-->
       <th>Sửa</th>
       <th>Xóa</th>
       <th>Chi tiết</th>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classes>
+  <class>
+    <class_id>DA21TTC</class_id>
+    <name>Công nghệ thông tin C</name>
+  </class>
+  <class>
+    <class_id>DA21TSA</class_id>
+    <name>Nuôi trồng thuy sản A</name>
+  </class>
+  <class>
+    <class_id>DA21TSB</class_id>
+    <name>Nuôi trồng thuy sản B</name>
+  </class>
+  <class>
+    <class_id>DA21SNV</class_id>
+    <name>Sư phạm ngữ văn</name>
+  </class>
+  <class>
+    <class_id>DA21NNA</class_id>
+    <name>Ngôn ngữ anh</name>
+  </class>
+  <class>
+    <class_id>DA21TTA</class_id>
+    <name>Công nghệ thông tin A</name>
+  </class>
+  <class>
+    <class_id>DA22TTB</class_id>
+    <name>Công nghệ thông tin B</name>
+  </class>
+  <class>
+    <class_id>DA21CNOTA</class_id>
+    <name>Công nghệ ô tô A</name>
+  </class>
+  <class>
+    <class_id>DA21CNOTB</class_id>
+    <name>Công nghệ ô tô B</name>
+  </class>
+  <class>
+    <class_id>DA21TYB</class_id>
+    <name>Thú Y B</name>
+  </class>
+  <class>
+    <class_id>DA21RHMA</class_id>
+    <name>Răng hàm mặt A</name>
+  </class>
+  
+</classes>

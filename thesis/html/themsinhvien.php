@@ -167,12 +167,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
     <div class="form-group">
         <label for="" class="control-label">Dân tộc:</label>
-        <select class="form-control" name="ethnicity" id="cars">
-            <option value="nam">Kinh</option>
-            <option value="nu">Khmer</option>
-            <option value="khac">Hoa</option>
-            <option value="khac">Khác</option>
-        </select>
+        <input class="form-control" type="text" name="ethnicity" placeholder="nhập dân tộc" required>
     </div>
     <div class="form-group">
         <label for="" class="control-label">Tôn Giáo:</label>

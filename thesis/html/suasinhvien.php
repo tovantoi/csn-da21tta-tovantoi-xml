@@ -122,7 +122,7 @@ if ($selectedStudent) {
         <input class="form-control" type="date" name="dob" placeholder="Nhập ngày sinh" value="<?php echo htmlspecialchars($dob); ?>" required>
     </div>
     <div class="form-group">
-        <label for="" class="control-label">Ảnh đại diện:</label>
+        <label for="avatar" class="control-label">Ảnh đại diện:</label>
         <img src="img/<?php echo isset($avatar) ? htmlspecialchars($avatar) : ''; ?>" alt="Ảnh đại diện">
     </div>
     <div class="form-group">

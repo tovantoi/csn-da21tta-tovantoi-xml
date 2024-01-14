@@ -1,6 +1,10 @@
 <?php
+// Function to save students to XML file
 function loadStudents()
 {
+    $xml = new DOMDocument();
+    $xml->load('sinhvien.xml');
+    return $xml;
     $xml = new DOMDocument();
     $xml = simplexml_load_file('data.xml');
     return $xml;
@@ -12,6 +16,7 @@ function saveStudents($xml)
     $xml->formatOutput = true;
     $xml->loadXML($xml->asXML());
     $xml->save('data.xml');
+    $xml->save('sinhvien.xml');
 }
 
 function loadClasse()

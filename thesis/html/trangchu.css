@@ -1,0 +1,64 @@
+
+    .row {
+    display: flex;
+    }
+    .col-sm-4 {
+        flex: 1;
+        margin: 10px; /* Để tạo khoảng cách giữa các phần */
+    }
+
+    img {
+        max-width: 100%; /* Để hình ảnh không vượt quá phần tử chứa */
+        height: auto;
+    }
+    .fakeimg {
+        height: 200px;
+        background: #aaa;
+    }
+
+    .dropbtn {
+        background-color: #f1f1f1;
+        color: black;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropbtn:hover,
+    .dropbtn:focus {
+        background-color: #ddd;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .navbar {
+        background-color: #343a40; /* Màu nền của thanh menu */
+        box-shadow: 0 4px 2px -2px gray; /* Hiệu ứng đổ bóng */
+    }
+
+    .navbar-nav .nav-link {
+        color: white !important; /* Màu chữ trắng */
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #ffc107 !important; /* Màu chữ khi hover */
+    }
+
+    .navbar-brand {
+        color: #ffc107 !important; /* Màu chữ cho brand */
+    }
+
+    .navbar-toggler-icon {
+        background-color: white; /* Màu biểu tượng cho mobile menu */
+    }

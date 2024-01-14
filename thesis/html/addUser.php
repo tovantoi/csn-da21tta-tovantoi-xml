@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['id']) && isset($_POST
         $user->addChild('mssv', htmlspecialchars($mssv));
         $user->addChild('fullname', htmlspecialchars($fullname));
         $user->addChild('username', htmlspecialchars($username));
-        $user->addChild('password', htmlspecialchars($password)); // Remember: Encrypt password before storing in production!
+        $user->addChild('password', htmlspecialchars($password)); 
         $user->addChild('phone', htmlspecialchars($phone));
         $user->addChild('email', htmlspecialchars($email));
         $user->addChild('role', htmlspecialchars($role));

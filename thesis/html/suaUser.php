@@ -1,7 +1,16 @@
 <?php
 require_once("header.php");
+//lấy mã số sinh viên
+$masv = "";
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+    if (isset($_GET['mssv'])) {
+        $masv = $_GET['mssv'];
+    }
+}
 ?>
 <?php
+$id = $mssv = $fullname = $username = $password = $phone = $email = $role = "";
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['id']) && isset($_POST['mssv']) && isset($_POST['fullname']) && isset($_POST['username']) && isset($_POST['password']) && isset($_POST['phone']) && isset($_POST['email']) && isset($_POST['role'])) {
     $id = $_POST['id'];
     $mssv = $_POST['mssv'];
@@ -15,12 +24,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['id']) && isset($_POST
     $xml = simplexml_load_file('users.xml');
 
     if ($xml) {
+        $userFound = false;
+
         foreach ($xml->user as $user) {
             if ($user->attributes()['id'] == $id) {
+                $userFound = true;
                 $user->mssv = htmlspecialchars($mssv);
                 $user->fullname = htmlspecialchars($fullname);
                 $user->username = htmlspecialchars($username);
-                $user->password = htmlspecialchars($password); // Encrypt password in a production environment
+                $user->password = htmlspecialchars($password);
                 $user->phone = htmlspecialchars($phone);
                 $user->email = htmlspecialchars($email);
                 $user->role = htmlspecialchars($role);
@@ -30,33 +42,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['id']) && isset($_POST
                 break;
             }
         }
+
+        if (!$userFound) {
+            echo "<p>Không tìm thấy người dùng với ID: $id</p>";
+        }
     } else {
         echo "Không thể đọc file XML.";
     }
 }
+
 ?>
-<?php
-$id = ''; // Khởi tạo biến $id
-$mssv = ''; // Khởi tạo biến $mssv
-$fullname = ''; // Khởi tạo biến $fullname
-$username = ''; // Khởi tạo biến $username
-$password = ''; // Khởi tạo biến $password
-$phone = ''; // Khởi tạo biến $phone
-$email = ''; // Khởi tạo biến $email
-$role = ''; // Khởi tạo biến $role
-
-// Tiếp theo là phần code để lấy dữ liệu từ tập tin XML và gán vào các biến trên, tương tự như phần code đã được cung cấp trước đó.
-
-// Sau khi có dữ liệu, bạn có thể sử dụng các biến này trong form để hiển thị thông tin người dùng cần sửa.
-?>
-
 <form method="post" action="">
     <div class="form-group">
         <label for="id" class="control-label">ID người dùng cần sửa:</label>
         <input id="id" class="form-control" type="text" name="id" placeholder="id" value="<?php echo htmlspecialchars($id); ?>" required><br>
     </div>
+    <?php echo "Giá trị của \$id: " . htmlspecialchars($id); ?>
 
-    <!-- Các trường thông tin khác sẽ hiển thị thông tin của người dùng cần sửa -->
     <div class="form-group">
         <label for="mssv" class="control-label">MSSV:</label>
         <input id="mssv" class="form-control" type="text" name="mssv" placeholder="mssv" value="<?php echo htmlspecialchars($mssv); ?>" required><br>
